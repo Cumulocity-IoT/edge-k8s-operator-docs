@@ -1,0 +1,34 @@
+---
+#
+# This CR deploys Edge version 1014.0.0 named 'cumulocity-iot-edge', with the below details
+#  - myown.iot.com domain with self-signed tls certificates
+#  - Cumulocity IoT Core and related pods in 'cumulocity-iot-edge' namespace
+#  - MongoDB in the 'cumulocity-iot-edge-mongodb' namespace
+#  - Docker Registry in the 'cumulocity-iot-edge-microservices-registry' namespace
+#  - Logging components in the 'cumulocity-iot-edge-logging' namespace
+#  - Apama and Smart Rules microservices in the 'cumulocity-iot-edge-microservices' namespace
+#     - Does not deploy Device Simulator and OPCUA Management Server services
+#  - Administration, Cockpit, Device Management and Apama Streaming Analytics applications
+#     - Does not deploy Apama Streaming Analytics services
+#
+
+apiVersion: edge.cumulocity.com/v1
+kind: Edge
+metadata:
+  name: cumulocity-iot-edge
+spec:
+  version: 1014.0.0
+  licenseSecretName: license-secret
+  company: iot.com
+  domain: myown.iot.com
+  adminCredentialsSecretName: admin-credentials-secret
+
+  microservices:
+    - name: device-simulator
+      disable: true
+    - name: opcua-mgmt-service
+      disable: true
+
+  applications:
+    - name: streaming-analytics
+      disable: true

@@ -1,0 +1,29 @@
+---
+#
+# This CR deploys Edge version 1014.0.0 named 'cumulocity-iot-edge', with the below details
+#  - myown.iot.com domain with self-signed tls certificates
+#  - Cumulocity IoT Core and related pods in 'cumulocity-iot-edge' namespace
+#  - MongoDB in the 'cumulocity-iot-edge-mongodb' namespace
+#  - Uses externally hosted Docker Registry, reachable at <EXTERNAL-DOCKER-REGISTRY-URL>
+#     - External externally Docker Registry server's credentials and server certificate specified
+#       in the microservices-registry-credentials-secret and microservices-registry-tls-secret secrets
+#  - Logging components in the 'cumulocity-iot-edge-logging' namespace
+#  - Apama, Smart Rules, Device Simulator and OPCUA Management Server microservices in the 'cumulocity-iot-edge-microservices' namespace
+#  - Administration, Cockpit, Device Management and Apama Streaming Analytics applications
+#
+
+apiVersion: edge.cumulocity.com/v1
+kind: Edge
+metadata:
+  name: cumulocity-iot-edge
+spec:
+  version: 1014.0.0
+  licenseSecretName: license-secret
+  company: iot.com
+  domain: myown.iot.com
+  adminCredentialsSecretName: admin-credentials-secret
+
+  microservicesRegistry:
+    url: <EXTERNAL-DOCKER-REGISTRY-URL>                              # Replace with the externally hosted Docker Registry URL
+    credentialsSecretName: microservices-registry-credentials-secret
+    tlsSecretName: microservices-registry-tls-secret
