@@ -1,4 +1,4 @@
-# **User Guide**
+# Cumulocity IoT Edge Kubernetes Operator
 * **[Overview](https://github.softwareag.com/IOTA/edge-k8s-operator/wiki/user-guide#overview)**
 * **[Architecture](https://github.softwareag.com/IOTA/edge-k8s-operator/wiki/user-guide#architecture)**
 * **[Getting Started](https://github.softwareag.com/IOTA/edge-k8s-operator/wiki/user-guide#getting-started)**
