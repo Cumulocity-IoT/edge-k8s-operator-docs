@@ -1,11 +1,11 @@
 
 # Overview
 
-The Cumulocity IoT Edge Kubernetes Operator automates the deployment and management of the Cumulocity IoT Edge on Kubernetes. The Operator manages a [Custom Resource Definition (CRD)](crd//v1/edge.cumulocity.com_edges.yaml) to extend the Kubernetes API for Cumulocity IoT Edge.
+The Cumulocity IoT Edge Kubernetes Operator automates the deployment and management of the Cumulocity IoT Edge on Kubernetes. The Operator manages a [Custom Resource Definition (CRD)](/crd/v1/edge.cumulocity.com_edges.yaml) to extend the Kubernetes API for Cumulocity IoT Edge.
 
 You can deploy and manage the Cumulocity IoT Edge on a Kubernetes cluster, by updating Cumulocity IoT Edge Custom Resource (CR). Instead of making changes to the deployment by hand, you specify changes in the Cumulocity IoT Edge CR file and use `kubectl apply` to apply these changes. The Operator picks up the changes and does what it needs to do to make them happen.
 
-This documentation includes examples of various [Cumulocity IoT Edge CR](samples/cr/v1/) options and possibilities you can use to deploy Edge on Kubernetes.
+This documentation includes examples of various [Cumulocity IoT Edge CR](/samples/cr/v1/) options and possibilities you can use to deploy Edge on Kubernetes.
 
 Henceforth, Cumulocity IoT Edge will be referred to as Edge.
 
@@ -166,7 +166,7 @@ kubectl create namespace <EDGE-CR-NAME>
 
 Create Secrets to supply the Edge repository credentials, license, admin user credentials and other details securely to the Edge Operator.
 
-Sample secret manifest files can be downloaded from [Secret manifest files](samples/secret)
+Sample secret manifest files can be downloaded from [Secret manifest files](/samples/secret)
 
 > **Note:** The Operator fetches the secrets from the namespace with the name of the Edge CR. Create these secrets before deploying or updating the Edge.
 
@@ -210,7 +210,7 @@ kubectl apply -f <PATH-TO-FILE>/secrets.yaml
 
 Refer to the [Edge Custom Resource Definition](#edge-custom-resource-definition) for structure of the Edge custom resource (CR) YAML file you need to create. You can edit the CR file at any time to make changes and manage the Edge deployment.
 
-Find below a [Sample CR](samples/cr/v1/cumulocity-iot-edge-cr.yaml).
+Find below a [Sample CR](/samples/cr/v1/cumulocity-iot-edge-cr.yaml).
 
 ```
 ---
@@ -280,7 +280,7 @@ TODO:
 
 Edge deployment settings are in the Edge Custom Resource (CR) YAML file. You can edit this file to make changes to your Edge deployment.
 
-The [Custom Resource Definition (CRD)](crd//v1/edge.cumulocity.com_edges.yaml) specifies the CR the Operator uses to manage Edge.
+The [Custom Resource Definition (CRD)](/crd/v1/edge.cumulocity.com_edges.yaml) specifies the CR the Operator uses to manage Edge.
 
 ## Configuration
 
@@ -315,7 +315,7 @@ microservicesRegistry | No | Structure | The Operator deploys a Docker registry 
 
 Specifies the name of the Kubernetes Secret containing the Edge license key. The Operator fetches this secret from the namespace with the name of the Edge CR. Create this secret before deploying or updating the Edge. 
 
-See sample [License secret manifest](samples/secret/license-secret.yaml) file.
+See sample [License secret manifest](/samples/secret/license-secret.yaml) file.
 
 This secret should contain the fields described in the table below.
 
@@ -327,7 +327,7 @@ licence | Yes | String |  | Edge license key.
 
 Specifies the name of the Kubernetes Secret containing the TLS Key/Certificates for the domain. The Operator fetches this secret from the namespace with the name of the Edge CR. Create this secret before deploying or updating the Edge.
 
-See sample [TLS secret manifest](samples/secret/tls-secret.yaml) file.
+See sample [TLS secret manifest](/samples/secret/tls-secret.yaml) file.
 
 This secret should contain the fields described in the table below.
 
@@ -340,7 +340,7 @@ certificateChain | Yes | String |  | Certificate chain of the private key for th
 
 Specifies the name of the Kubernetes Secret containing the management/edge tenant's admin credentials. The Operator fetches this secret from the namespace with the name of the Edge CR. Create this secret before deploying or updating the Edge.
 
-See sample [Admin credentials secret manifest](samples/secret/admin-credentials-secret.yaml) file.
+See sample [Admin credentials secret manifest](/samples/secret/admin-credentials-secret.yaml) file.
 
 This secret should contain the fields described in the table below.
 
@@ -403,7 +403,7 @@ arbiterResources | No | Structure | Defaults to CPU Limit: 4000m, Memory Limit: 
 
 Specifies the name of the Kubernetes Secret containing the credentials to connect to an externally hosted MongoDB server. The Operator fetches this secret from the namespace with the name of the Edge CR. Create this secret before deploying or updating the Edge.
 
-See sample [MongoDB credentials secret manifest](samples/secret/mongodb-credentials-secret.yaml) file.
+See sample [MongoDB credentials secret manifest](/samples/secret/mongodb-credentials-secret.yaml) file.
 
 This secret should contain the fields described in the table below.
 
@@ -428,7 +428,7 @@ resources | No | Structure | Defaults to CPU Limit: 4000m, Memory Limit: 6G, CPU
 
 Specifies the name of the Kubernetes Secret containing the credentials to connect to an externally hosted Docker registry (used to store Cumulocity microservice images). The Operator fetches this secret from the namespace with the name of the Edge CR. Create this secret before deploying or updating the Edge.
 
-See sample [Microservices registry credentials secret manifest](samples/secret/microservices-registry-credentials-secret.yaml) file.
+See sample [Microservices registry credentials secret manifest](/samples/secret/microservices-registry-credentials-secret.yaml) file.
 
 This secret should contain the fields described in the table below.
 
@@ -464,7 +464,7 @@ requestsMemory | No | String |  | Specific memory requests in memory units. For 
 
 This secret named `sag-registry-credentials` is required to supply the Software AG Registry (registry.c8y.io) credentials to the Operator. The Operator explicitly searches for the secret named `sag-registry-credentials`, so you can't change its name. Create this secret before deploying or updating the Edge.
 
-See sample [Software AG Registry Credentials Secret manifest](samples/secret/sag-registry-credentials-secret.yaml) file.
+See sample [Software AG Registry Credentials Secret manifest](/samples/secret/sag-registry-credentials-secret.yaml) file.
 
 This secret should contain the fields described in the table below.
 
@@ -479,7 +479,7 @@ password | Yes | String |  | Edge Repo password you received.
 
 The Edge Kubernetes Operator makes it easier for you to use Edge on Kubernetes. Instead of making changes to the Edge deployment by hand, you specify changes in the Edge CR file, then use `kubectl apply` to apply these changes. The Operator picks up on the changes and does what it needs to do in order to make them happen.
 
-For this example assume that the Edge was deployed using the file [Sample CR](samples/cr/v1/cumulocity-iot-edge-cr.yaml).
+For this example assume that the Edge was deployed using the file [Sample CR](/samples/cr/v1/cumulocity-iot-edge-cr.yaml).
 
 ### Example Configuration Change
 
@@ -524,7 +524,7 @@ The Operator follows the recreate update strategy to upgrade of the Edge deploym
 
 The recreate update strategy is an all-or-nothing process that updates all aspects of the system at once with a brief downtime period. The Operator selects all outdated Pods and deactivates them at once. Once all old Pods are deactivated, the Operator creates updated Pods for the entire system. Edge is inoperable starting at the old Pod’s deactivation and ending once the final updated Pod is created.
 
-For this example assume that cluster is deployed using the file [Sample CR](samples/cr/v1/cumulocity-iot-edge-cr.yaml).
+For this example assume that cluster is deployed using the file [Sample CR](/samples/cr/v1/cumulocity-iot-edge-cr.yaml).
 
 ### Start the Upgrade
 
