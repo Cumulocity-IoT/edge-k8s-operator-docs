@@ -15,7 +15,7 @@ The Edge Kubernetes Operator has a custom controller (written in Go) that manage
 
 The Operator is deployed in the namespace specified during the installation of the Operator or by default created in the 'edge-k8s-operator-system' namespace. As part of the Edge deployment, the Operator creates multiple Kubernetes resources in various namespaces and watches them. These namespaces names are prefixed with the Edge CR name. e.g. <EDGE-CR-NAME>, <EDGE-CR-NAME>-microservices, <EDGE-CR-NAME>-logging, <EDGE-CR-NAME>-mongodb and <EDGE-CR-NAME>-microservices-registry.
 
-![operator-architecture](guides/images/edge-k8s-operator.png)
+![operator-architecture](images/edge-k8s-operator.png)
 
 # Getting Started
 
@@ -186,7 +186,7 @@ Sample secret manifest files can be downloaded from [Secret manifest files](/sam
   Name of this secret should be supplied to `spec.tlsSecretName` field of Edge CR. See [TLS Secret](#tls-secret) for details.
 
 * Secret for supplying the management/edge tenant's admin credentials to the Cumulocity IoT Edge Operator.
-  Name of this secret should be supplied to `spec.adminCredentialsSecretName` field of Edge CR. See [Admin Credentials Secret](#admin-dredentials-secret) for details.
+  Name of this secret should be supplied to `spec.adminCredentialsSecretName` field of Edge CR. See [Admin Credentials Secret](#admin-credentials-secret) for details.
   
 * Secret for supplying credentials to connect to an externally hosted MongoDB server, to the Cumulocity IoT Edge Operator. This secret is optional. Only required if you want this Edge deployment to use an externally hosted MongoDB server.
   Name of this secret should be supplied to `mongoDb.credentialsSecretName` field of Edge CR. See [MongoDB Credentials Secret](#mongodb-credentials-secret) for details.
@@ -441,7 +441,7 @@ password | Yes | String |  | Password to connect to an externally hosted Docker 
 
 Specifies the name of the Kubernetes Secret containing the server certificate of an externally hosted Docker registry. The Operator fetches this secret from the namespace with the name of the Edge CR. Create this secret before deploying or updating the Edge.
 
-See sample [Microservices registry TLS secret manifest](/microservices-registry-tls-secret.yaml) file.
+See sample [Microservices registry TLS secret manifest](/samples/secret/microservices-registry-tls-secret.yaml) file.
 
 This secret should contain the fields described in the table below.
 
