@@ -1,50 +1,50 @@
-# Cumulocity IoT Edge Kubernetes Operator User Guide
+## Cumulocity IoT Edge Kubernetes Operator User Guide
 
-* **[Overview](01-overview)**
-* **[Architecture](02-architecture)**
-* **[Getting Started](03-getting-started)**
-    * **[System Requirements](03-getting-started#system-requirements)**
-        * **[K3s](03-getting-started#k3s)**
-        * **[K3d](03-getting-started#k3d)**
-    * **[Install Operator](03-getting-started#install-operator)**
-        * **[Requirements](03-getting-started#requirements)**
-        * **[Get Helm Charts](03-getting-started#get-helm-charts)**
-        * **[Deploy Edge Kubernetes Operator](03-getting-started#deploy-edge-kubernetes-operator)**
-    * **[Install Edge](03-getting-started#install-edge)**
-        * **[Requirements](03-getting-started#requirements)**
-        * **[Domain Name System (DNS) setup](03-getting-started#domain-name-system-dns-setup)**
-        * **[Label Kubernetes node](03-getting-started#label-kubernetes-node)**
-        * **[Prepare namespace](03-getting-started#prepare-namespace)**
-            * **[Create namespace](03-getting-started#create-namespace)**
-            * **[Create Secrets](03-getting-started#create-secrets)**
-        * **[Create Edge Custom Resource (CR)](03-getting-started#create-edge-custom-resource-cr)**
-        * **[Deploy Edge](03-getting-started#deploy-edge)**
-        * **[Create Services and Ingress routes](03-getting-started#create-services-and-ingress-routes)**
-        * **[Verify Edge deployment](03-getting-started#verify-edge-deployment)**
-    * **[Connect to Edge](03-getting-started#connect-to-edge)**
-    * **[Accessing logs](03-getting-started#accessing-logs)**
-    * **[Troubleshooting](03-getting-started#troubleshooting)**
-* **[Edge Custom Resource Definition](04-edge-custom-resource-definition)**
-    * **[Configuration](04-edge-custom-resource-definition#configuration)**
-    * **[Spec](04-edge-custom-resource-definition#spec)**
-    * **[License Secret](04-edge-custom-resource-definition#license-secret)**
-    * **[TLS Secret](04-edge-custom-resource-definition#tls-secret)**
-    * **[Admin Credentials Secret](04-edge-custom-resource-definition#admin-credentials-secret)**
-    * **[Cumulocity IoT Core configurations](04-edge-custom-resource-definition#cumulocity-iot-core-configurations)**
-    * **[Cumulocity IoT Core values](04-edge-custom-resource-definition#cumulocity-iot-core-values)**
-    * **[Microservices](04-edge-custom-resource-definition#microservices)**
-    * **[Applications](04-edge-custom-resource-definition#applications)**
-    * **[MongoDb](04-edge-custom-resource-definition#mongodb)**
-    * **[MongoDB Credentials Secret](04-edge-custom-resource-definition#mongodb-credentials-secret)**
-    * **[Microservices Registry](04-edge-custom-resource-definition#microservices-registry)**
-    * **[Microservices Registry Credentials Secret](04-edge-custom-resource-definition#microservices-registry-credentials-secret)**
-    * **[Microservices Registry TLS Secret](04-edge-custom-resource-definition#microservices-registry-tls-secret)**
-    * **[Resource Limits Spec](04-edge-custom-resource-definition#resource-limits-spec)**
-    * **[Software AG Registry Credentials Secret](04-edge-custom-resource-definition#software-ag-registry-credentials-secret)**
-* **[Management](05-management)**
-    * **[Modify Edge deployment](05-management#modify-edge-deployment)**
-        * **[Example Configuration Change](05-management#example-configuration-change)**
-    * **[Version upgrade](05-management#version-upgrade)**
-        * **[Start the Upgrade](05-management#start-the-upgrade)**
-    * **[Undeploy Edge](05-management#undeploy-edge)**
-* **[Upgrade Operator](06-upgrade-operator)**
+* **[Overview](https://github.com/SoftwareAG/edge-k8s-operator-docs/wiki/01-overview)**
+* **[Architecture](https://github.com/SoftwareAG/edge-k8s-operator-docs/wiki/02-architecture)**
+* **[Getting Started](https://github.com/SoftwareAG/edge-k8s-operator-docs/wiki/03-getting-started)**
+    * **[System Requirements](https://github.com/SoftwareAG/edge-k8s-operator-docs/wiki/03-getting-started#system-requirements)**
+        * **[K3s](https://github.com/SoftwareAG/edge-k8s-operator-docs/wiki/03-getting-started#k3s)**
+        * **[K3d](https://github.com/SoftwareAG/edge-k8s-operator-docs/wiki/03-getting-started#k3d)**
+    * **[Install Operator](https://github.com/SoftwareAG/edge-k8s-operator-docs/wiki/03-getting-started#install-operator)**
+        * **[Requirements](https://github.com/SoftwareAG/edge-k8s-operator-docs/wiki/03-getting-started#requirements)**
+        * **[Get Helm Charts](https://github.com/SoftwareAG/edge-k8s-operator-docs/wiki/03-getting-started#get-helm-charts)**
+        * **[Deploy Edge Kubernetes Operator](https://github.com/SoftwareAG/edge-k8s-operator-docs/wiki/03-getting-started#deploy-edge-kubernetes-operator)**
+    * **[Install Edge](https://github.com/SoftwareAG/edge-k8s-operator-docs/wiki/03-getting-started#install-edge)**
+        * **[Requirements](https://github.com/SoftwareAG/edge-k8s-operator-docs/wiki/03-getting-started#requirements)**
+        * **[Domain Name System (DNS) setup](https://github.com/SoftwareAG/edge-k8s-operator-docs/wiki/03-getting-started#domain-name-system-dns-setup)**
+        * **[Label Kubernetes node](https://github.com/SoftwareAG/edge-k8s-operator-docs/wiki/03-getting-started#label-kubernetes-node)**
+        * **[Prepare namespace](https://github.com/SoftwareAG/edge-k8s-operator-docs/wiki/03-getting-started#prepare-namespace)**
+            * **[Create namespace](https://github.com/SoftwareAG/edge-k8s-operator-docs/wiki/03-getting-started#create-namespace)**
+            * **[Create Secrets](https://github.com/SoftwareAG/edge-k8s-operator-docs/wiki/03-getting-started#create-secrets)**
+        * **[Create Edge Custom Resource (CR)](https://github.com/SoftwareAG/edge-k8s-operator-docs/wiki/03-getting-started#create-edge-custom-resource-cr)**
+        * **[Deploy Edge](https://github.com/SoftwareAG/edge-k8s-operator-docs/wiki/03-getting-started#deploy-edge)**
+        * **[Create Services and Ingress routes](https://github.com/SoftwareAG/edge-k8s-operator-docs/wiki/03-getting-started#create-services-and-ingress-routes)**
+        * **[Verify Edge deployment](https://github.com/SoftwareAG/edge-k8s-operator-docs/wiki/03-getting-started#verify-edge-deployment)**
+    * **[Connect to Edge](https://github.com/SoftwareAG/edge-k8s-operator-docs/wiki/03-getting-started#connect-to-edge)**
+    * **[Accessing logs](https://github.com/SoftwareAG/edge-k8s-operator-docs/wiki/03-getting-started#accessing-logs)**
+    * **[Troubleshooting](https://github.com/SoftwareAG/edge-k8s-operator-docs/wiki/03-getting-started#troubleshooting)**
+* **[Edge Custom Resource Definition](https://github.com/SoftwareAG/edge-k8s-operator-docs/wiki/04-edge-custom-resource-definition)**
+    * **[Configuration](https://github.com/SoftwareAG/edge-k8s-operator-docs/wiki/04-edge-custom-resource-definition#configuration)**
+    * **[Spec](https://github.com/SoftwareAG/edge-k8s-operator-docs/wiki/04-edge-custom-resource-definition#spec)**
+    * **[License Secret](https://github.com/SoftwareAG/edge-k8s-operator-docs/wiki/04-edge-custom-resource-definition#license-secret)**
+    * **[TLS Secret](https://github.com/SoftwareAG/edge-k8s-operator-docs/wiki/04-edge-custom-resource-definition#tls-secret)**
+    * **[Admin Credentials Secret](https://github.com/SoftwareAG/edge-k8s-operator-docs/wiki/04-edge-custom-resource-definition#admin-credentials-secret)**
+    * **[Cumulocity IoT Core configurations](https://github.com/SoftwareAG/edge-k8s-operator-docs/wiki/04-edge-custom-resource-definition#cumulocity-iot-core-configurations)**
+    * **[Cumulocity IoT Core values](https://github.com/SoftwareAG/edge-k8s-operator-docs/wiki/04-edge-custom-resource-definition#cumulocity-iot-core-values)**
+    * **[Microservices](https://github.com/SoftwareAG/edge-k8s-operator-docs/wiki/04-edge-custom-resource-definition#microservices)**
+    * **[Applications](https://github.com/SoftwareAG/edge-k8s-operator-docs/wiki/04-edge-custom-resource-definition#applications)**
+    * **[MongoDb](https://github.com/SoftwareAG/edge-k8s-operator-docs/wiki/04-edge-custom-resource-definition#mongodb)**
+    * **[MongoDB Credentials Secret](https://github.com/SoftwareAG/edge-k8s-operator-docs/wiki/04-edge-custom-resource-definition#mongodb-credentials-secret)**
+    * **[Microservices Registry](https://github.com/SoftwareAG/edge-k8s-operator-docs/wiki/04-edge-custom-resource-definition#microservices-registry)**
+    * **[Microservices Registry Credentials Secret](https://github.com/SoftwareAG/edge-k8s-operator-docs/wiki/04-edge-custom-resource-definition#microservices-registry-credentials-secret)**
+    * **[Microservices Registry TLS Secret](https://github.com/SoftwareAG/edge-k8s-operator-docs/wiki/04-edge-custom-resource-definition#microservices-registry-tls-secret)**
+    * **[Resource Limits Spec](https://github.com/SoftwareAG/edge-k8s-operator-docs/wiki/04-edge-custom-resource-definition#resource-limits-spec)**
+    * **[Software AG Registry Credentials Secret](https://github.com/SoftwareAG/edge-k8s-operator-docs/wiki/04-edge-custom-resource-definition#software-ag-registry-credentials-secret)**
+* **[Management](https://github.com/SoftwareAG/edge-k8s-operator-docs/wiki/05-management)**
+    * **[Modify Edge deployment](https://github.com/SoftwareAG/edge-k8s-operator-docs/wiki/05-management#modify-edge-deployment)**
+        * **[Example Configuration Change](https://github.com/SoftwareAG/edge-k8s-operator-docs/wiki/05-management#example-configuration-change)**
+    * **[Version upgrade](https://github.com/SoftwareAG/edge-k8s-operator-docs/wiki/05-management#version-upgrade)**
+        * **[Start the Upgrade](https://github.com/SoftwareAG/edge-k8s-operator-docs/wiki/05-management#start-the-upgrade)**
+    * **[Undeploy Edge](https://github.com/SoftwareAG/edge-k8s-operator-docs/wiki/05-management#undeploy-edge)**
+* **[Upgrade Operator](https://github.com/SoftwareAG/edge-k8s-operator-docs/wiki/06-upgrade-operator)**
