@@ -23,5 +23,6 @@ spec:
   adminCredentialsSecretName: admin-credentials-secret
 
   mongoDb:
-    host: <EXTERNAL-MONGODB-HOST>                # Replace with externally hosted MongoDB server host
+    host: <EXTERNAL-MONGODB-HOST>                           # Replace with externally hosted MongoDB server host
+    connectionString: <EXTERNAL-MONGODB-CONNECTION-STRING>  # Replace with externally hosted MongoDB server connection string
     credentialsSecretName: mongodb-credentials-secret
