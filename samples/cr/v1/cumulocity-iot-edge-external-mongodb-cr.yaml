@@ -18,7 +18,7 @@ metadata:
 spec:
   version: 1014.0.0
   licenseSecretName: license-secret
-  company: iot.com
+  company: IoT Company
   domain: myown.iot.com
   adminCredentialsSecretName: admin-credentials-secret
 
