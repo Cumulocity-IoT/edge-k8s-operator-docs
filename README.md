@@ -12,7 +12,7 @@
         * **[Deploy Edge Kubernetes Operator](https://github.com/SoftwareAG/edge-k8s-operator-docs/wiki/03-getting-started#deploy-edge-kubernetes-operator)**
     * **[Install Edge](https://github.com/SoftwareAG/edge-k8s-operator-docs/wiki/03-getting-started#install-edge)**
         * **[Requirements](https://github.com/SoftwareAG/edge-k8s-operator-docs/wiki/03-getting-started#requirements)**
-        * **[Configure Kubernetes with private registry](https://github.com/SoftwareAG/edge-k8s-operator-docs/wiki/03-getting-started#configure-kubernetes-with-private-registry)
+        * **[Configure Kubernetes with private registry](https://github.com/SoftwareAG/edge-k8s-operator-docs/wiki/03-getting-started#configure-kubernetes-with-private-registry)**
         * **[Domain Name System (DNS) setup](https://github.com/SoftwareAG/edge-k8s-operator-docs/wiki/03-getting-started#domain-name-system-dns-setup)**
         * **[Label Kubernetes node](https://github.com/SoftwareAG/edge-k8s-operator-docs/wiki/03-getting-started#label-kubernetes-node)**
         * **[Prepare namespace](https://github.com/SoftwareAG/edge-k8s-operator-docs/wiki/03-getting-started#prepare-namespace)**
