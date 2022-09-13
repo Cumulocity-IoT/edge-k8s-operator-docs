@@ -13,10 +13,10 @@ metadata:
 spec:
   ports:
     - name: 1884-1884
-      port: 8884                      # MQTT port with TLS
+      port: 1884
       targetPort: 1884
     - name: 1883-1883
-      port: 1883                      # MQTT port without TLS
+      port: 1883
       targetPort: 1883
   selector:
     app: cumulocity-core              # Do not change this as the labels for Cumulocity Core pods are fixed.
