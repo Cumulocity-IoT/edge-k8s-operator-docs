@@ -6,11 +6,11 @@
 apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
-  namespace: cumulocity-iot-edge
-  name: cumulocity-iot-edge-ingress
+  namespace: cumulocity-iot-edge                # Replace with the Edge CR name you used
+  name: http-ingress-traefik
   annotations:
     traefik.ingress.kubernetes.io/router.entrypoints: web,websecure
-    traefik.ingress.kubernetes.io/router.tls: "true"
+    traefik.ingress.kubernetes.io/router.tls: "false"
 spec:
   rules:
     - http:
@@ -19,6 +19,6 @@ spec:
             pathType: Prefix
             backend:
               service:
-                name: cumulocity-iot-edge-http           # Name of the HTTP service for exposing the "cumulocity-core" pods
+                name: http-service               # Name of the HTTP service for exposing the "cumulocity-core" pods
                 port:
                   number: 80
