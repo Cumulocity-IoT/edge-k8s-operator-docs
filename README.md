@@ -1,4 +1,4 @@
-## Cumulocity IoT Edge Kubernetes Operator User Guide
+# Cumulocity IoT Edge Kubernetes Operator User Guide
 
 * **[Overview](https://github.com/SoftwareAG/edge-k8s-operator-docs/wiki/01-overview)**
 * **[Architecture](https://github.com/SoftwareAG/edge-k8s-operator-docs/wiki/02-architecture)**
@@ -12,6 +12,7 @@
         * **[Deploy Edge Kubernetes Operator](https://github.com/SoftwareAG/edge-k8s-operator-docs/wiki/03-getting-started#deploy-edge-kubernetes-operator)**
     * **[Install Edge](https://github.com/SoftwareAG/edge-k8s-operator-docs/wiki/03-getting-started#install-edge)**
         * **[Requirements](https://github.com/SoftwareAG/edge-k8s-operator-docs/wiki/03-getting-started#requirements)**
+        * **[Configure Kubernetes with private registry](https://github.com/SoftwareAG/edge-k8s-operator-docs/wiki/03-getting-started#configure-kubernetes-with-private-registry)
         * **[Domain Name System (DNS) setup](https://github.com/SoftwareAG/edge-k8s-operator-docs/wiki/03-getting-started#domain-name-system-dns-setup)**
         * **[Label Kubernetes node](https://github.com/SoftwareAG/edge-k8s-operator-docs/wiki/03-getting-started#label-kubernetes-node)**
         * **[Prepare namespace](https://github.com/SoftwareAG/edge-k8s-operator-docs/wiki/03-getting-started#prepare-namespace)**
@@ -19,9 +20,12 @@
             * **[Create Secrets](https://github.com/SoftwareAG/edge-k8s-operator-docs/wiki/03-getting-started#create-secrets)**
         * **[Create Edge Custom Resource (CR)](https://github.com/SoftwareAG/edge-k8s-operator-docs/wiki/03-getting-started#create-edge-custom-resource-cr)**
         * **[Deploy Edge](https://github.com/SoftwareAG/edge-k8s-operator-docs/wiki/03-getting-started#deploy-edge)**
-        * **[Create Services and Ingress routes](https://github.com/SoftwareAG/edge-k8s-operator-docs/wiki/03-getting-started#create-services-and-ingress-routes)**
+        * **[Create Services](https://github.com/SoftwareAG/edge-k8s-operator-docs/wiki/03-getting-started#create-services)**
+        * **[Create Ingress routes](https://github.com/SoftwareAG/edge-k8s-operator-docs/wiki/03-getting-started#create-ingress-routes)**
         * **[Verify Edge deployment](https://github.com/SoftwareAG/edge-k8s-operator-docs/wiki/03-getting-started#verify-edge-deployment)**
-    * **[Connect to Edge](https://github.com/SoftwareAG/edge-k8s-operator-docs/wiki/03-getting-started#connect-to-edge)**
+    * **[Accessing Edge](https://github.com/SoftwareAG/edge-k8s-operator-docs/wiki/03-getting-started#accessing-edge)**
+        * **[Configuring access through domain name](https://github.com/SoftwareAG/edge-k8s-operator-docs/wiki/03-getting-started#configuring-access-through-domain-name)**
+        * **[Accessing through domain name](https://github.com/SoftwareAG/edge-k8s-operator-docs/wiki/03-getting-started#accessing-through-domain-name)**
     * **[Accessing logs](https://github.com/SoftwareAG/edge-k8s-operator-docs/wiki/03-getting-started#accessing-logs)**
     * **[Troubleshooting](https://github.com/SoftwareAG/edge-k8s-operator-docs/wiki/03-getting-started#troubleshooting)**
 * **[Edge Custom Resource Definition](https://github.com/SoftwareAG/edge-k8s-operator-docs/wiki/04-edge-custom-resource-definition)**
