@@ -1,0 +1,23 @@
+---
+#
+# Service to access Cumulocity IoT application running on Pods labeled "cumulocity-core" over MQTT.
+#
+
+apiVersion: v1
+kind: Service
+metadata:
+  labels:
+    app: mqtt
+  name: mqtt-service
+  namespace: cumulocity-iot-edge      # Replace with the Edge CR name you used
+spec:
+  ports:
+    - name: 8884-1884
+      port: 8884                      # MQTT port with TLS
+      targetPort: 1884
+    - name: 1883-1883
+      port: 1883                      # MQTT port without TLS
+      targetPort: 1883
+  selector:
+    app: cumulocity-core              # Do not change this as the labels for Cumulocity Core pods are fixed.
+  type: LoadBalancer

@@ -10,8 +10,7 @@ metadata:
   name: http-ingress-traefik
   annotations:
     traefik.ingress.kubernetes.io/router.entrypoints: web,websecure
-    traefik.ingress.kubernetes.io/router.tls: "false"
-    traefik.ingress.kubernetes.io/router.tls.passthrough: "false" # As the SSL termination happens at OpenResty in the Core pod
+    traefik.ingress.kubernetes.io/router.tls: "false"  # As SSL termination happens at OpenResty running in the core pod
 spec:
   rules:
     - http:
