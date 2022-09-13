@@ -12,7 +12,7 @@ metadata:
   namespace: cumulocity-iot-edge      # Replace with the Edge CR name you used
 spec:
   ports:
-    - name: 1884-1884
+    - name: 8884-1884
       port: 8884                      # MQTT port with TLS
       targetPort: 1884
     - name: 1883-1883
