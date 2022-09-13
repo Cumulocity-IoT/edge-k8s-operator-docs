@@ -1,0 +1,20 @@
+
+#
+# Replace 'cumulocity-iot-edge' with the Edge CR name you plan to deploy.
+# Create a 'registries.yaml' file as root in '/etc/rancher/k3s/' folder with the updated content
+# on the node that uses the registry.
+#
+# Note: K3 Cluster needs a restart for these changes to take effect.
+#
+
+mirrors:
+  internal-registry-service.cumulocity-iot-edge-microservices-registry.svc.cluster.local:5000:
+    endpoint:
+      - https://internal-registry-service.cumulocity-iot-edge-microservices-registry.svc.cluster.local:5000
+configs:
+  internal-registry-service.cumulocity-iot-edge-microservices-registry.svc.cluster.local:5000:
+    auth:
+      username: docker_user				# this is the registry username (DO NOT CHANGE)
+      password: docker_password			# this is the registry password (DO NOT CHANGE)
+    tls:
+      insecure_skip_verify: true
