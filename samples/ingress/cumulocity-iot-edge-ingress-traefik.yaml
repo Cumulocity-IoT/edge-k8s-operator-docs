@@ -10,7 +10,7 @@ metadata:
   name: http-ingress-traefik
   annotations:
     traefik.ingress.kubernetes.io/router.entrypoints: web,websecure
-    traefik.ingress.kubernetes.io/router.tls: "false"
+    traefik.ingress.kubernetes.io/router.tls: "true"
 spec:
   rules:
     - http:
