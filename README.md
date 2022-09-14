@@ -45,10 +45,12 @@
     * **[Microservices Registry TLS Secret](https://github.com/SoftwareAG/edge-k8s-operator-docs/wiki/04-edge-custom-resource-definition#microservices-registry-tls-secret)**
     * **[Resource Limits Spec](https://github.com/SoftwareAG/edge-k8s-operator-docs/wiki/04-edge-custom-resource-definition#resource-limits-spec)**
     * **[Software AG Registry Credentials Secret](https://github.com/SoftwareAG/edge-k8s-operator-docs/wiki/04-edge-custom-resource-definition#software-ag-registry-credentials-secret)**
-* **[Management](https://github.com/SoftwareAG/edge-k8s-operator-docs/wiki/05-management)**
-    * **[Modify Edge deployment](https://github.com/SoftwareAG/edge-k8s-operator-docs/wiki/05-management#modify-edge-deployment)**
-        * **[Example Configuration Change](https://github.com/SoftwareAG/edge-k8s-operator-docs/wiki/05-management#example-configuration-change)**
-    * **[Version upgrade](https://github.com/SoftwareAG/edge-k8s-operator-docs/wiki/05-management#version-upgrade)**
-        * **[Start the Upgrade](https://github.com/SoftwareAG/edge-k8s-operator-docs/wiki/05-management#start-the-upgrade)**
-    * **[Undeploy Edge](https://github.com/SoftwareAG/edge-k8s-operator-docs/wiki/05-management#undeploy-edge)**
-* **[Upgrade Operator](https://github.com/SoftwareAG/edge-k8s-operator-docs/wiki/06-upgrade-operator)**
+* **[Management](https://github.com/SoftwareAG/edge-k8s-operator-docs/wiki/05-manage-edge-deployment)**
+    * **[Modify Edge deployment](https://github.com/SoftwareAG/edge-k8s-operator-docs/wiki/05-manage-edge-deployment#modify-edge-deployment)**
+        * **[Example Configuration Change](https://github.com/SoftwareAG/edge-k8s-operator-docs/wiki/05-manage-edge-deployment#example-configuration-change)**
+    * **[Version upgrade](https://github.com/SoftwareAG/edge-k8s-operator-docs/wiki/05-manage-edge-deployment#version-upgrade)**
+        * **[Start the Upgrade](https://github.com/SoftwareAG/edge-k8s-operator-docs/wiki/05-manage-edge-deployment#start-the-upgrade)**
+    * **[Undeploy Edge](https://github.com/SoftwareAG/edge-k8s-operator-docs/wiki/05-manage-edge-deployment#undeploy-edge)**
+* **[Manage Operator](https://github.com/SoftwareAG/edge-k8s-operator-docs/wiki/06-manage-operator)**
+    * **[Upgrade Operator](https://github.com/SoftwareAG/edge-k8s-operator-docs/wiki/06-manage-operator#upgrade-operator)**
+    * **[Undeploy Edge](https://github.com/SoftwareAG/edge-k8s-operator-docs/wiki/06-manage-operator#undeploy-operator)**
