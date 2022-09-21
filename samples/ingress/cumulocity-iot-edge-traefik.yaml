@@ -1,0 +1,15 @@
+apiVersion: traefik.containo.us/v1alpha1
+kind: IngressRouteTCP
+metadata:
+  namespace: cumulocity-iot-edge-sample
+  name: http-ingress-traefik
+spec:
+  entryPoints:
+  - websecure
+  routes:
+  - match: "HostSNI(`*`)"
+    services:
+    - name: http-service
+      port: 443
+  tls:
+    passthrough: true
