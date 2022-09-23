@@ -14,7 +14,7 @@ spec:
   routes:
   - match: "HostSNI(`*`)"
     services:
-    - name: http-service                  # Name of the HTTP service for exposing the "cumulocity-core" pods
+    - name: cumulocity-iot-edge-service-http     # Replace 'cumulocity-iot-edge' with the Edge CR name you used. Name of the HTTP service for exposing the "cumulocity-core" pods
       port: 443
   tls:
     passthrough: true
