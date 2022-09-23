@@ -1,0 +1,20 @@
+---
+#
+# Traefik IngressRouteTCP to access Cumulocity IoT application running on Pods labeled "cumulocity-core" over HTTP.
+#
+
+apiVersion: traefik.containo.us/v1alpha1
+kind: IngressRouteTCP
+metadata:
+  namespace: cumulocity-iot-edge          # Replace with the Edge CR name you used
+  name: http-ingress-traefik
+spec:
+  entryPoints:
+  - websecure
+  routes:
+  - match: "HostSNI(`*`)"
+    services:
+    - name: http-service                  # Name of the HTTP service for exposing the "cumulocity-core" pods
+      port: 443
+  tls:
+    passthrough: true
