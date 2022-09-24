@@ -14,11 +14,7 @@
         * **[Requirements](https://github.com/SoftwareAG/edge-k8s-operator-docs/wiki/03-getting-started#requirements)**
         * **[Configure Kubernetes with private registry](https://github.com/SoftwareAG/edge-k8s-operator-docs/wiki/03-getting-started#configure-kubernetes-with-private-registry)**
         * **[Domain Name System (DNS) setup](https://github.com/SoftwareAG/edge-k8s-operator-docs/wiki/03-getting-started#domain-name-system-dns-setup)**
-        * **[Label Kubernetes node](https://github.com/SoftwareAG/edge-k8s-operator-docs/wiki/03-getting-started#label-kubernetes-node)**
-        * **[Prepare namespace](https://github.com/SoftwareAG/edge-k8s-operator-docs/wiki/03-getting-started#prepare-namespace)**
-            * **[Create namespace](https://github.com/SoftwareAG/edge-k8s-operator-docs/wiki/03-getting-started#create-namespace)**
-            * **[Create Secrets](https://github.com/SoftwareAG/edge-k8s-operator-docs/wiki/03-getting-started#create-secrets)**
-        * **[Create Edge Custom Resource (CR)](https://github.com/SoftwareAG/edge-k8s-operator-docs/wiki/03-getting-started#create-edge-custom-resource-cr)**
+        * **[Create Kubernetes Manifest with Edge Custom Resource (CR)](https://github.com/SoftwareAG/edge-k8s-operator-docs/wiki/03-getting-started#create-kubernetes-manifest-with-edge-custom-resource-cr)**
         * **[Deploy Edge](https://github.com/SoftwareAG/edge-k8s-operator-docs/wiki/03-getting-started#deploy-edge)**
         * **[Create Services](https://github.com/SoftwareAG/edge-k8s-operator-docs/wiki/03-getting-started#create-services)**
         * **[Create Ingress routes](https://github.com/SoftwareAG/edge-k8s-operator-docs/wiki/03-getting-started#create-ingress-routes)**
