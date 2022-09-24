@@ -34,10 +34,10 @@ metadata:
 spec:
   version: 1014.0.0
   licenseSecretName: license-secret
-  company: IoT Company
-  domain: myown.iot.com
+  company: IoT Company                                  # Replace with the company name
+  domain: myown.iot.com                                 # Replace with the domain of your choice
   adminCredentialsSecretName: admin-credentials-secret
-#  tlsSecretName: tls-secret  # Uncomment to supply the TLS Key/Certificates
+#  tlsSecretName: tls-secret                            # Uncomment to supply the TLS Key/Certificates
 
 # Uncomment below lines to skip or undeploy Device Simulator and OPCUA Management Server services
 #  microservices:
