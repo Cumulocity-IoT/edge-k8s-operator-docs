@@ -1,5 +1,5 @@
 
-Samples folder contains various Customer Resource, secret, service and ingress manifest files required for deploying Cumulocity IoT Edge using the Edge K8s Operator. 
+Samples folder contains a sample Kubernetes manifest with the Edge custom resource (CR) definition, Secrets and Ingress necessary to deploy Cumulocity IoT Edge. 
 
-In all these files, `cumulocity-iot-edge` is used as the Custom Resource name. If you want to change the name, search replace `cumulocity-iot-edge` with the name you want to use in all the files under this folder.
+In this file, `cumulocity-iot-edge` is used as the Custom Resource name. If you want to change the name, search replace `cumulocity-iot-edge` with the name you want to use.
 
