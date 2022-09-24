@@ -5,6 +5,7 @@
 #
 # Creates 'cumulocity-iot-edge' namespace
 #
+
 apiVersion: v1
 kind: Namespace
 metadata:
