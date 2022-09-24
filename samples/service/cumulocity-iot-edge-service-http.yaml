@@ -1,0 +1,23 @@
+---
+#
+# Service to access Cumulocity IoT application running on Pods labeled "cumulocity-core" over HTTP.
+#
+
+apiVersion: v1
+kind: Service
+metadata:
+  labels:
+    app: http
+  name: http-service
+  namespace: cumulocity-iot-edge        # Replace with the Edge CR name you used
+spec:
+  ports:
+    - name: 443-443
+      port: 443
+      targetPort: 443
+    - name: 80-80
+      port: 80
+      targetPort: 80
+  selector:
+    app: cumulocity-core                # Do not change this as the labels for Cumulocity Core pods are fixed.
+  type: ClusterIP
