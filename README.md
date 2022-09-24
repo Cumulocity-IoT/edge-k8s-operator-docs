@@ -16,8 +16,6 @@
         * **[Domain Name System (DNS) setup](https://github.com/SoftwareAG/edge-k8s-operator-docs/wiki/03-getting-started#domain-name-system-dns-setup)**
         * **[Create Kubernetes Manifest with Edge Custom Resource (CR)](https://github.com/SoftwareAG/edge-k8s-operator-docs/wiki/03-getting-started#create-kubernetes-manifest-with-edge-custom-resource-cr)**
         * **[Deploy Edge](https://github.com/SoftwareAG/edge-k8s-operator-docs/wiki/03-getting-started#deploy-edge)**
-        * **[Create Services](https://github.com/SoftwareAG/edge-k8s-operator-docs/wiki/03-getting-started#create-services)**
-        * **[Create Ingress routes](https://github.com/SoftwareAG/edge-k8s-operator-docs/wiki/03-getting-started#create-ingress-routes)**
         * **[Verify Edge deployment](https://github.com/SoftwareAG/edge-k8s-operator-docs/wiki/03-getting-started#verify-edge-deployment)**
     * **[Accessing Edge](https://github.com/SoftwareAG/edge-k8s-operator-docs/wiki/03-getting-started#accessing-edge)**
         * **[Configuring access through domain name](https://github.com/SoftwareAG/edge-k8s-operator-docs/wiki/03-getting-started#configuring-access-through-domain-name)**
