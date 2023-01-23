@@ -1,0 +1,52 @@
+---
+#
+# This CR deploys Edge version 1014.0.0 named 'cumulocity-iot-edge', with the below details
+#  - myown.iot.com domain with self-signed tls certificates
+#  - Cumulocity IoT Core and related pods in 'cumulocity-iot-edge' namespace
+#  - MongoDB in the 'cumulocity-iot-edge-mongodb' namespace
+#  - Docker Registry in the 'cumulocity-iot-edge-microservices-registry' namespace
+#  - Logging components in the 'cumulocity-iot-edge-logging' namespace
+#  - Apama and Smart Rules microservices in the 'cumulocity-iot-edge-microservices' namespace
+#  - Administration, Cockpit, Device Management and Apama Streaming Analytics applications
+#
+
+apiVersion: edge.cumulocity.com/v1
+kind: Edge
+metadata:
+  name: cumulocity-iot-edge
+spec:
+  version: 1014.0.0
+  licenseSecretName: license-secret
+  company: IoT Company                                  # Replace with the company name
+  domain: myown.iot.com                                 # Replace with the domain of your choice
+  adminCredentialsSecretName: admin-credentials-secret
+#  tlsSecretName: tls-secret                            # Uncomment to supply the TLS Key/Certificates
+
+# Uncomment below lines to skip or undeploy Device Simulator and OPCUA Management Server services
+#  microservices:
+#    - name: device-simulator
+#      disable: true
+#    - name: opcua-mgmt-service
+#      disable: true
+
+# Uncomment below lines to skip or undeploy Apama Streaming Analytics
+#  applications:
+#    - name: streaming-analytics
+#      disable: true
+
+# Uncomment below lines and provide the necessary details to configure the Cumulocity IoT Platform
+# with an externally hosted MongoDB server, reachable at <EXTERNAL-MONGODB-HOST>
+# External MongoDB server's credentials and shardedKey specified in the 'mongodb-credentials-secret secret'
+#  mongoDb:
+#    mongosHost: <EXTERNAL-MONGODB-HOST>                     # Replace with externally hosted MongoDB server host
+#    connectionString: <EXTERNAL-MONGODB-CONNECTION-STRING>  # Replace with externally hosted MongoDB server connection string
+#    credentialsSecretName: mongodb-credentials-secret
+
+# Uncomment below lines and provide the necessary details to configure the Cumulocity IoT Platform
+# with an externally hosted Docker Registry, reachable at <EXTERNAL-DOCKER-REGISTRY-URL>
+# External externally Docker Registry server's credentials and server certificate specified
+# in the 'microservices-registry-credentials-secret' and 'microservices-registry-tls-secret' secrets
+#  microservicesRegistry:
+#    url: <EXTERNAL-DOCKER-REGISTRY-URL>                              # Replace with the externally hosted Docker Registry URL
+#    credentialsSecretName: microservices-registry-credentials-secret
+#    tlsSecretName: microservices-registry-tls-secret
